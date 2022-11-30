@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="webpagestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <script src="webpage.js">
+</script>
+
+   <h1>Test your Breaking Bad knowledge!</h1>
+   <div class="card">
+    <div class="pad">
+    <h2> How does Gus Fring die?</h2>
+      <input type="radio" name="gusfringdeath" id="Correct1"> He gets blown up. <br>
+      <input type="radio" name="gusfringdeath"> He gets poisoned. <br>
+      <input type="radio" name="gusfringdeath"> The cartel executes him. <br>
+      <input type="radio" name="gusfringdeath"> He mercy kills himself. <br>
+    </div>
+  <br>
+  <div class="pad">
+      <h2> Who is the last remaining Salamanca?</h2>
+      <input type="radio" name="lastsalamanca"> The cousins. <br>
+      <input type="radio" name="lastsalamanca" id="Correct2"> Hector Salamanca. <br>
+      <input type="radio" name="lastsalamanca"> Lalo Salamanca. <br>
+      <input type="radio" name="lastsalamanca"> Tuco Salamanca. <br>
+    </div>
+  <br>
+  <div class="pad">
+      <h2> Who is the first Salamanca to be killed in Breaking Bad?</h2>
+      <input type="radio" name="firstsalamanca"> The cousins. <br>
+      <input type="radio" name="firstsalamanca"> Hector Salamanca. <br>
+      <input type="radio" name="firstsalamanca"> Lalo Salamanca. <br>
+      <input type="radio" name="firstsalamanca" id="Correct3"> Tuco Salamanca. <br>
+      </div>
+  <br>
+  <div class="pad">
+      <h2> Who kills Don Eladio?</h2>
+      <input type="radio" name="dondeath"> Walter White. <br>
+      <input type="radio" name="dondeath"> Lalo Salamanca. <br>
+      <input type="radio" name="dondeath"> Mike Ehrmantraut. <br>
+      <input type="radio" name="dondeath" id="Correct4"> Gustavo Fring. <br>
+    </div>
+  <br>
+  <div class="pad">
+      <h2> What is the cousins' favorite weapon?</h2>
+      <input type="radio" name="favweapon"> A pistol. <br>
+      <input type="radio" name="favweapon" id="Correct5"> An axe. <br>
+      <input type="radio" name="favweapon"> Their own brute hands. <br>
+      <input type="radio" name="favweapon"> Brass Knuckles. <br>
+    </div>
+  <br>
+  <div class="pad">
+      <h2> What does Brock get poisoned with?</h2>
+      <input type="radio" name="brock"> Risen. <br>
+      <input type="radio" name="brock"> Cyanide. <br>
+      <input type="radio" name="brock" id = "Correct6"> Lily of the Valley. <br>
+      <input type="radio" name="brock"> Phosphine poisoning. <br>
+    </div>
+  <br>
+  <div class="pad">
+      <h2> Saul Goodman's real name?</h2>
+      <input type="radio" name="saulname" id="Correct7"> Jimmy McGill. <br>
+      <input type="radio" name="saulname"> Johnson White. <br>
+      <input type="radio" name="saulname"> Jeremy McShaw. <br>
+      <input type="radio" name="saulname"> Saul Goodman. <br>
+    </div>
+      <br> 
+    </div>
+
+    <div class="submit">
+  <input type="submit" name="submit" value="Submit." onClick="result()">
+</div>
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('Correct1').checked)
+		{	score++;
+		}
+
+    else{
+        alert("You got problem 1 wrong. Gus is blown up by Hector after Walter straps a bomb onto him.");
+    }
+	if(document.getElementById('Correct2').checked)
+		{	score++;
+		}
+
+        else{
+        alert("You got problem 2 wrong. Gus waits to kill every Salamanca so Hector can witness his family's downfall.");
+    }
+
+	if(document.getElementById('Correct3').checked)
+		{	score++;
+		}
+        else{
+        alert("You got problem 3 wrong. Lalo is the first to be killed chronologically but he is not shown in Breaking Bad. Therefore, it is Tuco.");
+    }
+        
+  if(document.getElementById('Correct4').checked)
+		{	score++;
+		}
+        else{
+        alert("You got problem 4 wrong. Gus poisons Don Eladio.");
+    }
+  if(document.getElementById('Correct5').checked)
+		{	score++;
+		}
+        else{
+        alert("You got problem 5 wrong. The cousins like using an axe to kill their victims. They will still use guns though.");
+    }
+  if(document.getElementById('Correct6').checked)
+		{	score++;
+		}
+
+        else{
+        alert("You got problem 6 wrong. Walter poisons Brock with a Lily of the Valley although it is initially assumed he was poisoned with Risen.");
+    }
+  if(document.getElementById('Correct7').checked)
+		{	score++;
+		}
+
+        else{
+        alert("You got problem 7 wrong. His real name is Jimmy McGill.");
+    }
+    if(score > 5){
+    alert("You got: " + score + " out of 7 correct. Good job on knowing your Breaking Bad stuff!");
+}
+    if(score<5){
+alert("You got : " + score + " out of 7 correct. Watch Breaking Bad!")
+    }
+    
+}
+
+    
+</script>
+<br>
+</body>
+</html>
